@@ -1,0 +1,258 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  height: 80px;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid gray;
+}
+label.logo {
+  color: white;
+  line-height: 80px;
+  font-size: 35px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  line-height: 80px;
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  padding: 7px 13px;
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    line-height: 30px;
+    margin: 50px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* profil */
+#profil {
+  padding: 130px;
+  color: white;
+}
+
+#perkenalan {
+  padding-top: 50px;
+}
+
+/* portfolio */
+#portfolio {
+  text-align: center;
+  color: white;
+  margin-top: -100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+/* akhir portfolio */
+
+/* Skill */
+#skill {
+  padding-top: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#skill .container {
+  margin: 50px;
+}
+
+#skill .col-2 {
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+/* akhir skill */
+#license a {
+  text-decoration: none;
+  color: white;
+}
+/* license */
+
+/* akhir license */
+.contact-form-wrapper {
+  padding: 100px 0;
+}
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+  border-color: grey;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px grey;
+}
+
+.contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-form .description {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #aeb4b9;
+}
+
+/* akhir contact */
+
+/* footer */
+footer {
+  background-color: black;
+  height: 260px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+footer .contact-us {
+  color: white;
+  float: left;
+}
+
+footer .contact-us a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .follow {
+  float: right;
+  color: white;
+}
+
+footer .follow ul {
+  list-style: none;
+  float: right;
+  color: white;
+}
+
+footer .follow li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* akhir footer */
