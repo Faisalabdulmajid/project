@@ -1,3 +1,4 @@
+/* header */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 * {
   margin: 0;
@@ -8,13 +9,15 @@
 }
 body {
   font-family: montserrat;
+  background-image: url(bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
 }
 nav {
   height: 80px;
   background-color: black;
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid gray;
 }
 label.logo {
   color: white;
@@ -95,6 +98,7 @@ a:hover {
     left: 0;
   }
 }
+/* akhir header */
 
 /* profil */
 #profil {
@@ -105,6 +109,15 @@ a:hover {
 #perkenalan {
   padding-top: 50px;
 }
+
+/* tentang */
+#tentang {
+  color: white;
+  background-color: rgb(29, 29, 29);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* akhir tentang */
 
 /* portfolio */
 #portfolio {
@@ -122,6 +135,9 @@ a:hover {
   padding-top: 100px;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(29, 29, 29);
+  color: white;
 }
 
 #skill .container {
@@ -140,87 +156,6 @@ a:hover {
 /* license */
 
 /* akhir license */
-.contact-form-wrapper {
-  padding: 100px 0;
-}
-
-.contact-form {
-  padding: 30px 40px;
-  background-color: white;
-  border-radius: 12px;
-  max-width: 400px;
-}
-
-.contact-form textarea {
-  resize: none;
-}
-
-.contact-form .form-input,
-.form-text-area {
-  background-color: #f0f4f5;
-  height: 50px;
-  padding-left: 16px;
-}
-
-.contact-form .form-text-area {
-  background-color: #f0f4f5;
-  height: auto;
-  padding-left: 16px;
-}
-
-.contact-form .form-control::placeholder {
-  color: #aeb4b9;
-  font-weight: 500;
-  opacity: 1;
-}
-
-.contact-form .form-control:-ms-input-placeholder {
-  color: #aeb4b9;
-  font-weight: 500;
-}
-
-.contact-form .form-control::-ms-input-placeholder {
-  color: #aeb4b9;
-  font-weight: 500;
-}
-
-.contact-form .form-control:focus {
-  border-color: grey;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px grey;
-}
-
-.contact-form .title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.contact-form .description {
-  color: black;
-  font-size: 14px;
-  text-align: center;
-}
-
-.contact-form .submit-button-wrapper {
-  text-align: center;
-}
-
-.contact-form .submit-button-wrapper input {
-  border: none;
-  border-radius: 4px;
-  background-color: gray;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 60px;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-.contact-form .submit-button-wrapper input:hover {
-  background-color: #aeb4b9;
-}
-
-/* akhir contact */
 
 /* footer */
 footer {
@@ -230,12 +165,12 @@ footer {
   padding: 50px;
 }
 
-footer .contact-us {
+footer #contact {
   color: white;
   float: left;
 }
 
-footer .contact-us a {
+footer #contact a {
   text-decoration: none;
   color: white;
 }
