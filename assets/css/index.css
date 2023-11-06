@@ -58,46 +58,7 @@ a:hover {
 #check {
   display: none;
 }
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    line-height: 30px;
-    margin: 50px 0;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  a.active,
-  a:hover {
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-}
+
 /* akhir header */
 
 /* profil */
@@ -191,3 +152,48 @@ footer .follow li a {
   color: #fff;
 }
 /* akhir footer */
+@media (max-width: 960px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    line-height: 30px;
+    margin: 50px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+#tentang {
+  color: white;
+  background-color: rgb(29, 29, 29);
+}
